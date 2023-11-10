@@ -128,6 +128,8 @@ let array14 = studentList.filter((element)=>{
 })
 console.log("14-2.",array14);
 
+// return에서 값이 true일 경우에만 요소를 추가함
+// 따라서 return이 생략되면 빈 배열이 출력됨
 
 // 15. 명단에 '홍'으로 시작하는 학생이 한 명이라도 있는지 확인하는 코드를 작성하세요.
 function findName15(firstname) {
