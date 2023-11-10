@@ -52,6 +52,18 @@ function findName6(name) {
       array6.push(i);
     }
   }
-  console.log("6.",array6[array6.length - 1]);
+  console.log("6.", array6[array6.length - 1]);
 }
-findName6("승민")
+findName6("승민");
+
+// 7. 명단에서 성씨가 ‘김’씨인 학생의 이름을 찾아 출력하는 코드를 작성하세요.
+function findName7(firstname) {
+  let array7 = [];
+  for (let i = 0; i < studentList.length; i++) {
+    if (studentList[i].slice(0, 1) === firstname) {
+      array7.push(studentList[i]);
+    }
+  }
+  console.log("7.", array7);
+}
+findName7("김");
