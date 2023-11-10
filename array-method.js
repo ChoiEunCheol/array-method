@@ -39,7 +39,19 @@ console.log("4.", studentList.reverse());
 studentList.reverse();
 
 // 5. 임의의 학생(본인이름) 명단에서 몇 번째에 있는지 찾아서 그 위치를 출력하는 코드를 작성하세요.
-function findName(name) {
+function findName5(name) {
   console.log("5.", studentList.indexOf(name));
 }
-findName("최은철");
+findName5("최은철");
+
+// 6.명단에 같은 이름(성씨제외)을 가진 학생이 두 명 있습니다. 이 중 마지막에 있는 학생의 위치를 찾아 출력하는 코드를 작성하세요.
+function findName6(name) {
+  let array6 = [];
+  for (let i = 0; i < studentList.length; i++) {
+    if (studentList[i].slice(1, studentList[0].length) === name) {
+      array6.push(i);
+    }
+  }
+  console.log("6.",array6[array6.length - 1]);
+}
+findName6("승민")
