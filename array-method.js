@@ -72,3 +72,8 @@ findName7("김");
 let newList8 = studentList.concat(pokemonList);
 console.log("8.", newList8);
 
+// 9. 모든 학생의 이름 앞에 '학생_'을 붙여 새로운 형식으로 명단을 만드는 코드를 작성하세요.
+let newList9 = studentList.map((element) => {
+  return "학생_" + element;
+});
+console.log(newList9);
