@@ -89,3 +89,11 @@ let Qustion11 = studentList.every((element)=>{
   return element.length === 3
 })
 console.log(Qustion11);
+
+// 12. 명단에서 마지막 학생이 전학을 갔습니다. 이 학생을 명단에서 제거하고, 그 학생의 이름을 출력하는 코드를 작성하세요.
+// 2번 문제와 동일 일단 보류
+
+// 13. 명단 중에서 두 번째부터 네 번째 학생까지만 따로 명단을 만들려고 합니다. 이 부분 명단을 복사하여 새로운 배열을 만드는 코드를 작성하세요.
+let newList13 = studentList.slice(1,4);
+// 두번째 매개변수는 출력되는 배열에 포함되지 않음 !
+console.log("13.", newList13);
