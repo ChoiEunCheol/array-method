@@ -88,7 +88,11 @@ console.log("10.", newList10);
 let Qustion11 = studentList.every((element) => {
   return element.length === 3;
 });
-console.log(Qustion11);
+if (Qustion11) {
+  console.log("11. 모든 학생의 이름이 세 글자입니다.");
+} else {
+  console.log("11. 모든 학생의 이름이 세 글자가 아닙니다.");
+}
 
 // 12. 명단에서 마지막 학생이 전학을 갔습니다. 이 학생을 명단에서 제거하고, 그 학생의 이름을 출력하는 코드를 작성하세요.
 // 2번 문제와 동일 일단 보류
@@ -130,7 +134,7 @@ function func15(firstname) {
     return element.slice(0, 1) === "홍";
   });
   if (Qustion15) {
-    console.log("15-1.",`${firstname}씨가 존재합니다.`);
+    console.log("15-1.", `${firstname}씨가 존재합니다.`);
   }
 }
 
