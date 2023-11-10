@@ -116,11 +116,22 @@ function findName15(firstname) {
       array15.push(1);
     } else array15.push(0);
   });
-  if(array15.includes(1)){
-    console.log("15.",`${firstname}씨가 존재합니다`)
+  if (array15.includes(1)) {
+    console.log("15.", `${firstname}씨가 존재합니다`);
   } else {
-    console.log("15.",`${firstname}씨가 존재하지 않습니다.`)
+    console.log("15.", `${firstname}씨가 존재하지 않습니다.`);
   }
 }
 
 findName15("홍");
+
+function func15(firstname) {
+  let Qustion15 = studentList.some((element) => {
+    return element.slice(0, 1) === "홍";
+  });
+  if (Qustion15) {
+    console.log("15-1.",`${firstname}씨가 존재합니다.`);
+  }
+}
+
+func15("홍");
