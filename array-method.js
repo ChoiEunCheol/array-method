@@ -111,7 +111,6 @@ studentList.forEach((element) => {
   return;
 });
 console.log("14.", newList14);
-
 // ------------------------------------------
 function func14(word) {
   let newList16 = [];
@@ -123,6 +122,12 @@ function func14(word) {
   console.log("14.1", newList16);
 }
 func14("승");
+// ------------------------------------------
+let array14 = studentList.filter((element)=>{
+  return element.includes("승");
+})
+console.log("14-2.",array14);
+
 
 // 15. 명단에 '홍'으로 시작하는 학생이 한 명이라도 있는지 확인하는 코드를 작성하세요.
 function findName15(firstname) {
