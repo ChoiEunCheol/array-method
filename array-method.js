@@ -67,3 +67,8 @@ function findName7(firstname) {
   console.log("7.", array7);
 }
 findName7("김");
+
+// 8. 기초데이터(studentList, pokemonList) 두 개의 명단을 합쳐 전체 학생 명단을 만들려고 합니다. 두 명단을 결합하는 코드를 작성하세요.
+let newList8 = studentList.concat(pokemonList);
+console.log("8.", newList8);
+
