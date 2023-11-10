@@ -76,11 +76,16 @@ console.log("8.", newList8);
 let newList9 = studentList.map((element) => {
   return "학생_" + element;
 });
-console.log(newList9);
+console.log("9.",newList9);
 
 // 10. 명단에 있는 모든 학생들의 이름을 하나의 문자열로 연결하여 출력하는 코드를 작성하세요.
 let newList10 = studentList.reduce((sum,element)=>{
   return sum += element;
 })
-console.log(newList10);
+console.log("10.", newList10);
 
+// 11. 모든 학생들의 이름이 세 글자인지 확인하는 코드를 작성하세요.
+let Qustion11 = studentList.every((element)=>{
+  return element.length === 3
+})
+console.log(Qustion11);
